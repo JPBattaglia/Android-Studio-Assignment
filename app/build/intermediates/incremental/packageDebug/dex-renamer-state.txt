@@ -1,0 +1,7 @@
+#Sat Sep 02 21:41:09 PDT 2017
+base.0=/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_bc8ba53f759a4963b65afd6d5c07c36ba3882b58
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_8bdd5d8be62327b9b9c60d533e90404c48d2f838/classes.dex
+base.1=/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_8bdd5d8be62327b9b9c60d533e90404c48d2f838
+file.0=/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_bc8ba53f759a4963b65afd6d5c07c36ba3882b58/classes.dex

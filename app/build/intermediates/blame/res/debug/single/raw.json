@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/build/intermediates/res/merged/debug/raw/theme.wav",
+        "source": "/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/src/main/res/raw/theme.wav"
+    },
+    {
+        "merged": "/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/build/intermediates/res/merged/debug/raw/bump.mp3",
+        "source": "/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/src/main/res/raw/bump.mp3"
+    },
+    {
+        "merged": "/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/build/intermediates/res/merged/debug/raw/crunch.mp3",
+        "source": "/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/src/main/res/raw/crunch.mp3"
+    }
+]

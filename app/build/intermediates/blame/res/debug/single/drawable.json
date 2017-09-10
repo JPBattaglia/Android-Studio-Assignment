@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/build/intermediates/res/merged/debug/drawable/splash.jpeg",
+        "source": "/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/src/main/res/drawable/splash.jpeg"
+    },
+    {
+        "merged": "/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/build/intermediates/res/merged/debug/drawable/redstar.png",
+        "source": "/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/src/main/res/drawable/redstar.png"
+    },
+    {
+        "merged": "/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/build/intermediates/res/merged/debug/drawable/rock.png",
+        "source": "/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/src/main/res/drawable/rock.png"
+    },
+    {
+        "merged": "/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/build/intermediates/res/merged/debug/drawable/apple.png",
+        "source": "/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/src/main/res/drawable/apple.png"
+    }
+]
