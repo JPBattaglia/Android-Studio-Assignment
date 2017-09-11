@@ -11,14 +11,7 @@
                     "endOffset": 214
                 },
                 "from": {
-                    "file": "/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 2,
-                        "startOffset": 814,
-                        "endColumn": 61,
-                        "endOffset": 873
-                    }
+                    "file": "/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/src/main/res/values/strings.xml"
                 }
             },
             {
@@ -30,14 +23,7 @@
                     "endOffset": 278
                 },
                 "from": {
-                    "file": "/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 20,
-                        "startColumn": 2,
-                        "startOffset": 876,
-                        "endColumn": 61,
-                        "endOffset": 935
-                    }
+                    "file": "/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/src/main/res/values/strings.xml"
                 }
             },
             {
@@ -49,14 +35,7 @@
                     "endOffset": 344
                 },
                 "from": {
-                    "file": "/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 2,
-                        "startOffset": 750,
-                        "endColumn": 63,
-                        "endOffset": 811
-                    }
+                    "file": "/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/src/main/res/values/strings.xml"
                 }
             },
             {
@@ -68,14 +47,7 @@
                     "endOffset": 407
                 },
                 "from": {
-                    "file": "/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 2,
-                        "startOffset": 689,
-                        "endColumn": 60,
-                        "endOffset": 747
-                    }
+                    "file": "/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/src/main/res/values/strings.xml"
                 }
             },
             {
@@ -87,13 +59,25 @@
                     "endOffset": 451
                 },
                 "from": {
+                    "file": "/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 456,
+                    "endColumn": 51,
+                    "endOffset": 503
+                },
+                "from": {
                     "file": "/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 22,
+                        "startLine": 23,
                         "startColumn": 4,
-                        "startOffset": 941,
+                        "startOffset": 993,
                         "endColumn": 51,
-                        "endOffset": 988
+                        "endOffset": 1040
                     }
                 }
             }

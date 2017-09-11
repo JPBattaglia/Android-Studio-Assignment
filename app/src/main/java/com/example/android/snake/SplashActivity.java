@@ -8,7 +8,7 @@ import android.os.Bundle;
  * Created by jeanpierrebattaglia on 8/31/17.
  */
 
-public class Splash extends Activity {
+public class SplashActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,7 @@ public class Splash extends Activity {
             public void run() {
                 try {
                     sleep(2500);
-                    Intent startMainScreen = new Intent(getApplicationContext(), Snake.class);
+                    Intent startMainScreen = new Intent(getApplicationContext(), SnakeActivity.class);
                     startActivity(startMainScreen);
                     finish();
                 } catch (InterruptedException e) {

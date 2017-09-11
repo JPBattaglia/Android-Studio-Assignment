@@ -19,6 +19,7 @@ package com.example.android.snake;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -26,24 +27,30 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.Window;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.example.android.snake.db.Score;
+import com.example.android.snake.db.SnakeDbHelper;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static android.R.id.home;
 
 /**
- * Snake: a simple game that everyone can enjoy.
- *
- * This is an implementation of the classic Game "Snake", in which you control a
+ * SnakeActivity: a simple game that everyone can enjoy.
+ * <p>
+ * This is an implementation of the classic Game "SnakeActivity", in which you control a
  * serpent roaming around the garden looking for apples. Be careful, though,
  * because when you catch one, not only will you become longer, but you'll move
  * faster. Running into yourself or the walls will end the game.
- *
  */
-public class Snake extends Activity {
+public class SnakeActivity extends Activity {
 
+    private static final String SCORE_DIALOG_TAG = "SCORE_DIALOG_TAG";
+    private static String ICICLE_KEY = "snake-view";
 
     private SnakeView mSnakeView;
-
-    private static String ICICLE_KEY = "snake-view";
 
     Context context;
     MediaPlayer mPlayer;
@@ -51,7 +58,6 @@ public class Snake extends Activity {
     /**
      * Called when Activity is first created. Turns off the title bar, sets up
      * the content views, and fires up the SnakeView.
-     *
      */
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -63,7 +69,6 @@ public class Snake extends Activity {
 
         mSnakeView = (SnakeView) findViewById(R.id.snake);
         mSnakeView.setTextView((TextView) findViewById(R.id.text));
-
 
 
         if (savedInstanceState == null) {
@@ -78,12 +83,13 @@ public class Snake extends Activity {
                 mSnakeView.setMode(SnakeView.PAUSE);
             }
         }
+
+        new ScoreDialog().show(getFragmentManager(), SCORE_DIALOG_TAG);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-
 
         mPlayer = MediaPlayer.create(context, R.raw.theme);
         mPlayer.start();
@@ -93,14 +99,13 @@ public class Snake extends Activity {
     }
 
 
-
     @Override
     protected void onPause() {
         super.onPause();
         // Pause the game along with the activity
         mSnakeView.setMode(SnakeView.PAUSE);
 
-        if(mPlayer.isPlaying()){
+        if (mPlayer.isPlaying()) {
             mPlayer.pause();
             mPlayer.release();
         }

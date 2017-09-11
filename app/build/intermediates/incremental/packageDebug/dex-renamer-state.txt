@@ -1,4 +1,4 @@
-#Sat Sep 02 21:41:09 PDT 2017
+#Sun Sep 10 17:51:49 PDT 2017
 base.0=/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_bc8ba53f759a4963b65afd6d5c07c36ba3882b58
 renamed.1=classes2.dex
 renamed.0=classes.dex

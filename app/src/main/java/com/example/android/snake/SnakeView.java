@@ -19,6 +19,7 @@ package com.example.android.snake;
 import java.util.ArrayList;
 import java.util.Random;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.res.Resources;
 import android.media.AudioManager;
@@ -33,10 +34,13 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.android.snake.db.Score;
+import com.example.android.snake.db.SnakeDbHelper;
+
 import static com.example.android.snake.R.drawable.redstar;
 
 /**
- * SnakeView: implementation of a simple game of Snake
+ * SnakeView: implementation of a simple game of SnakeActivity
  *
  *
  */
@@ -350,13 +354,14 @@ public class SnakeView extends TileView {
             str = res.getText(R.string.mode_pause);
         }
         if (newMode == READY) {
-            str = "Press Up To Start New Snake Game";
+            str = "Press Up To Start New SnakeActivity Game";
         }
         if (newMode == LOSE) {
             str = "Game Over!!  Score: " + mScore
                     + "      Press Up To Play Again";
 
 
+            saveScore(mScore);
             ///NEW CODE
             MediaPlayer MEDIA_PLAYER = MediaPlayer.create(getContext(), R.raw.bump);
             MEDIA_PLAYER.start();
@@ -364,6 +369,14 @@ public class SnakeView extends TileView {
 
         mStatusText.setText(str);
         mStatusText.setVisibility(View.VISIBLE);
+    }
+
+    private void saveScore(long score) {
+        SnakeDbHelper snakeDbHelper = new SnakeDbHelper(getContext());
+        //TODO: save a real username and use it
+        Score scoreModel = new Score(score, "test_username", System.currentTimeMillis());
+        scoreModel.insert(snakeDbHelper.getWritableDatabase());
+        //TODO: we may need to close writable db instance
     }
 
     /**

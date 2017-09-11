@@ -22,13 +22,13 @@ import android.test.ActivityInstrumentationTestCase2;
  * Make sure that the main launcher activity opens up properly, which will be
  * verified by {@link #testActivityTestCaseSetUpProperly}.
  */
-public class SnakeTest extends ActivityInstrumentationTestCase2<Snake> {
+public class SnakeActivityTest extends ActivityInstrumentationTestCase2<SnakeActivity> {
 
     /**
-     * Creates an {@link ActivityInstrumentationTestCase2} for the {@link Snake} activity.
+     * Creates an {@link ActivityInstrumentationTestCase2} for the {@link SnakeActivity} activity.
      */
-    public SnakeTest() {
-        super(Snake.class);
+    public SnakeActivityTest() {
+        super(SnakeActivity.class);
     }
 
     /**

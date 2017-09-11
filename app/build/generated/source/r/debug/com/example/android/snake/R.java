@@ -26,13 +26,15 @@ containing a value of this type.
         public static final int splash=0x7f020004;
     }
     public static final class id {
-        public static final int imageView=0x7f060002;
-        public static final int snake=0x7f060000;
-        public static final int text=0x7f060001;
+        public static final int imageView=0x7f060003;
+        public static final int scores_view=0x7f060000;
+        public static final int snake=0x7f060001;
+        public static final int text=0x7f060002;
     }
     public static final class layout {
-        public static final int snake_layout=0x7f030000;
-        public static final int splash_screen=0x7f030001;
+        public static final int score_layout=0x7f030000;
+        public static final int snake_layout=0x7f030001;
+        public static final int splash_screen=0x7f030002;
     }
     public static final class raw {
         public static final int bump=0x7f040000;
@@ -45,6 +47,7 @@ containing a value of this type.
         public static final int mode_pause=0x7f050002;
         public static final int mode_ready=0x7f050003;
         public static final int snake_layout_text_text=0x7f050004;
+        public static final int user_scores=0x7f050005;
     }
     public static final class styleable {
         /** Attributes that can be used with a TileView.

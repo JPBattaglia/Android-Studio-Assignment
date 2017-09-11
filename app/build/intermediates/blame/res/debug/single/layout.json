@@ -4,6 +4,10 @@
         "source": "/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/src/main/res/layout/splash_screen.xml"
     },
     {
+        "merged": "/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/build/intermediates/res/merged/debug/layout/score_layout.xml",
+        "source": "/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/src/main/res/layout/score_layout.xml"
+    },
+    {
         "merged": "/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/build/intermediates/res/merged/debug/layout/snake_layout.xml",
         "source": "/Users/jeanpierrebattaglia/Documents/Projects/Snake/app/src/main/res/layout/snake_layout.xml"
     }
